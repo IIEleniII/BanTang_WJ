@@ -1,0 +1,6 @@
+framework module Pods_BanTang_WJUITests {
+  umbrella header "Pods-BanTang_WJUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

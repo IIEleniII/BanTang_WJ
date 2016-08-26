@@ -1,0 +1,6 @@
+framework module Pods_BanTang_WJ {
+  umbrella header "Pods-BanTang_WJ-umbrella.h"
+
+  export *
+  module * { export * }
+}
