@@ -16,6 +16,11 @@
 		C40EB0251D6FDBCF00EE205E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C40EB0231D6FDBCF00EE205E /* LaunchScreen.storyboard */; };
 		C40EB0301D6FDBD000EE205E /* BanTang_WJTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB02F1D6FDBD000EE205E /* BanTang_WJTests.swift */; };
 		C40EB03B1D6FDBD000EE205E /* BanTang_WJUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB03A1D6FDBD000EE205E /* BanTang_WJUITests.swift */; };
+		C40EB0751D6FF18600EE205E /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB0741D6FF18600EE205E /* MainTabBarController.swift */; };
+		C40EB0771D70160B00EE205E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB0761D70160B00EE205E /* HomeViewController.swift */; };
+		C40EB0801D70187C00EE205E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB07F1D70187C00EE205E /* Constants.swift */; };
+		C40EB0841D701B7A00EE205E /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB0831D701B7A00EE205E /* MainNavigationController.swift */; };
+		C40EB0861D702CF000EE205E /* PlazaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB0851D702CF000EE205E /* PlazaViewController.swift */; };
 		EDBBF6ECD836233AAC041E85 /* Pods_BanTang_WJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A112E876AC33D9D57B973745 /* Pods_BanTang_WJ.framework */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,11 @@
 		C40EB0361D6FDBD000EE205E /* BanTang_WJUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BanTang_WJUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40EB03A1D6FDBD000EE205E /* BanTang_WJUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BanTang_WJUITests.swift; sourceTree = "<group>"; };
 		C40EB03C1D6FDBD000EE205E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C40EB0741D6FF18600EE205E /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C40EB0761D70160B00EE205E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C40EB07F1D70187C00EE205E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C40EB0831D701B7A00EE205E /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		C40EB0851D702CF000EE205E /* PlazaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlazaViewController.swift; sourceTree = "<group>"; };
 		D3BDCC5C78C7AE8D8818DCAB /* Pods-BanTang_WJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanTang_WJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanTang_WJTests/Pods-BanTang_WJTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,12 +136,7 @@
 			children = (
 				C40EB0671D6FDEBB00EE205E /* Libs */,
 				C40EB0481D6FDEBB00EE205E /* Classes */,
-				C40EB01A1D6FDBCF00EE205E /* AppDelegate.swift */,
-				C40EB01C1D6FDBCF00EE205E /* ViewController.swift */,
-				C40EB01E1D6FDBCF00EE205E /* Main.storyboard */,
-				C40EB0211D6FDBCF00EE205E /* Assets.xcassets */,
-				C40EB0231D6FDBCF00EE205E /* LaunchScreen.storyboard */,
-				C40EB0261D6FDBCF00EE205E /* Info.plist */,
+				C40EB0691D6FEEF300EE205E /* SupportFiles */,
 			);
 			path = BanTang_WJ;
 			sourceTree = "<group>";
@@ -157,15 +162,13 @@
 		C40EB0481D6FDEBB00EE205E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C40EB0491D6FDEBB00EE205E /* Category */,
-				C40EB04A1D6FDEBB00EE205E /* Home */,
 				C40EB04E1D6FDEBB00EE205E /* Main */,
-				C40EB0521D6FDEBB00EE205E /* NewsCenter */,
 				C40EB0561D6FDEBB00EE205E /* Others */,
+				C40EB04A1D6FDEBB00EE205E /* Home */,
+				C40EB0521D6FDEBB00EE205E /* NewsCenter */,
 				C40EB05A1D6FDEBB00EE205E /* Photos */,
 				C40EB05E1D6FDEBB00EE205E /* Plaza */,
 				C40EB0621D6FDEBB00EE205E /* Profile */,
-				C40EB0661D6FDEBB00EE205E /* Tools */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -174,7 +177,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Category;
+			name = Category;
+			path = ../Category;
 			sourceTree = "<group>";
 		};
 		C40EB04A1D6FDEBB00EE205E /* Home */ = {
@@ -190,6 +194,7 @@
 		C40EB04B1D6FDEBB00EE205E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB0761D70160B00EE205E /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +216,9 @@
 		C40EB04E1D6FDEBB00EE205E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB0791D7017BF00EE205E /* Public */,
+				C40EB0661D6FDEBB00EE205E /* Tools */,
+				C40EB0491D6FDEBB00EE205E /* Category */,
 				C40EB04F1D6FDEBB00EE205E /* Controller */,
 				C40EB0501D6FDEBB00EE205E /* Model */,
 				C40EB0511D6FDEBB00EE205E /* View */,
@@ -221,6 +229,8 @@
 		C40EB04F1D6FDEBB00EE205E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB0741D6FF18600EE205E /* MainTabBarController.swift */,
+				C40EB0831D701B7A00EE205E /* MainNavigationController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -252,6 +262,7 @@
 		C40EB0531D6FDEBB00EE205E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB0851D702CF000EE205E /* PlazaViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -398,7 +409,8 @@
 			isa = PBXGroup;
 			children = (
 			);
-			path = Tools;
+			name = Tools;
+			path = ../Tools;
 			sourceTree = "<group>";
 		};
 		C40EB0671D6FDEBB00EE205E /* Libs */ = {
@@ -406,6 +418,27 @@
 			children = (
 			);
 			path = Libs;
+			sourceTree = "<group>";
+		};
+		C40EB0691D6FEEF300EE205E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				C40EB01A1D6FDBCF00EE205E /* AppDelegate.swift */,
+				C40EB01C1D6FDBCF00EE205E /* ViewController.swift */,
+				C40EB01E1D6FDBCF00EE205E /* Main.storyboard */,
+				C40EB0211D6FDBCF00EE205E /* Assets.xcassets */,
+				C40EB0231D6FDBCF00EE205E /* LaunchScreen.storyboard */,
+				C40EB0261D6FDBCF00EE205E /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		C40EB0791D7017BF00EE205E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				C40EB07F1D70187C00EE205E /* Constants.swift */,
+			);
+			path = Public;
 			sourceTree = "<group>";
 		};
 		C54719DF65EDD0CD6D22B644 /* Pods */ = {
@@ -683,8 +716,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40EB0841D701B7A00EE205E /* MainNavigationController.swift in Sources */,
+				C40EB0801D70187C00EE205E /* Constants.swift in Sources */,
+				C40EB0751D6FF18600EE205E /* MainTabBarController.swift in Sources */,
+				C40EB0861D702CF000EE205E /* PlazaViewController.swift in Sources */,
 				C40EB01D1D6FDBCF00EE205E /* ViewController.swift in Sources */,
 				C40EB01B1D6FDBCF00EE205E /* AppDelegate.swift in Sources */,
+				C40EB0771D70160B00EE205E /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
