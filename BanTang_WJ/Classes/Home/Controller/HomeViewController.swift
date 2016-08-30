@@ -46,22 +46,26 @@ class HomeViewController: UIViewController{
     func setupTitleButtons(){
     
         let index  = 4
-        let btnWH:CGFloat = screenW/CGFloat(index)
+        let images = ["GoodSomething","PlantingGrass","searchLarge","SignIn"]
 
         for i in 0..<index {
-            // 容器view
-            let view = UIView()
-            view.frame = CGRectMake(CGFloat(i)*btnWH,CGRectGetMaxY(bannerView.frame) ,btnWH , btnWH)
-            view.backgroundColor = randomColor
+
             //创建btn
             let btn = UIButton(type: .Custom)
+            let col = i % index
+            //let row = 1
+            let btnW:CGFloat = screenW/CGFloat(index)
+            let marginX = (screenW/CGFloat(index) - btnW)/2
+            let marginY:CGFloat = 20
             
-            btn.center = view.center
+            btn.x = CGFloat(col) * btnW + marginX
+            btn.y = CGRectGetMaxY(bannerView.frame) + marginY
             btn.tag = i
-            btn.setImage(UIImage(named: "GoodSomething"), forState: .Normal)
+            btn.setImage(UIImage(named: images[i]), forState: .Normal)
             btn.size = (btn.currentImage?.size)!
-            view.addSubview(btn)
-            headerView.addSubview(view)
+            btn.adjustsImageWhenHighlighted = false // 点击时禁止高亮效果
+            
+            headerView.addSubview(btn)
             
         }
 
