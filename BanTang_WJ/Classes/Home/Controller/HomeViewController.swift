@@ -8,15 +8,19 @@
 
 import UIKit
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController{
 
+    var headerView:UIView! // 头部视图
+    var bannerView:DCPicScrollView! // 轮播图片
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
         // 1. 创建顶部自定义导航栏
-        // 2.创建轮播图
-        // 3.
-        // 4.创建标题滑动collectionView
+        
+        // 2.初始化头部视图(包含轮播图、标题按钮、滚动标题view)
+        self.setupHeaderView()
+        // 3.创建内容tableView
         
         
     }
@@ -26,15 +30,58 @@ class HomeViewController: UIViewController {
         self.navigationController?.navigationBarHidden = true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func setupHeaderView(){
+    
+        // 0.创建容器视图
+        headerView = UIView()
+        headerView.frame = CGRectMake(0, 0, screenW, 300)
+        //headerView.backgroundColor = UIColor.greenColor()
+        self.view.addSubview(headerView)
+        // 1.创建轮播图
+        setupBannerView()
+        // 2.创建标题button
+        setupTitleButtons()
+        // 3.创建标题滑动collectionView
     }
-    */
+    func setupTitleButtons(){
+    
+        let index  = 4
+        let btnWH:CGFloat = screenW/CGFloat(index)
+
+        for i in 0..<index {
+            // 容器view
+            let view = UIView()
+            view.frame = CGRectMake(CGFloat(i)*btnWH,CGRectGetMaxY(bannerView.frame) ,btnWH , btnWH)
+            view.backgroundColor = randomColor
+            //创建btn
+            let btn = UIButton(type: .Custom)
+            
+            btn.center = view.center
+            btn.tag = i
+            btn.setImage(UIImage(named: "GoodSomething"), forState: .Normal)
+            btn.size = (btn.currentImage?.size)!
+            view.addSubview(btn)
+            headerView.addSubview(view)
+            
+        }
+
+    }
+    func setupBannerView(){
+    
+        let imgs = ["http://7fvaoh.com3.z0.glb.qiniucdn.com/image/150717/ersqeu575.jpg-w720","http://7fvaoh.com3.z0.glb.qiniucdn.com/image/150729/ipds0i95t.jpg-w720"]
+        bannerView = DCPicScrollView(frame: CGRectMake(0, -20, screenW, 170), withImageUrls: imgs)
+            // 图片点击回调
+        bannerView.imageViewDidTapAtIndex = { (index) in
+            switch index {
+            case 0:
+                printLog("点击图片0")
+            case 1:
+                printLog("点击图片1")
+            default:
+                break
+            }
+        }
+        headerView.addSubview(bannerView)
+    }
 
 }

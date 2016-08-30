@@ -5,6 +5,7 @@ target 'BanTang_WJ' do
     use_frameworks!
 
 pod 'Alamofire'
+pod 'AFNetworking'
 
 
   target 'BanTang_WJTests' do

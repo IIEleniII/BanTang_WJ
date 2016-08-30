@@ -22,8 +22,8 @@ let tabbarH:CGFloat = 44
     //颜色相关
 
 let themeColor = UIColor.init(red: 37/255.0, green: 190/255.0, blue: 159/255.0, alpha: 1.0)
-let selectedThemeColor = UIColor.init(red: 182/255.0, green: 209/255.0, blue: 200/255.0, alpha: 0.6)
-
+let selectedThemeColor = UIColor(red: 182/255.0, green: 209/255.0, blue: 200/255.0, alpha: 0.6)
+let randomColor = UIColor(red: CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1.0)
 
 
 // MARK: - 常用配置方法

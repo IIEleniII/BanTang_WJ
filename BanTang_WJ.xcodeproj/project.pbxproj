@@ -24,6 +24,16 @@
 		C40EB1531D74278900EE205E /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1521D74278900EE205E /* NotificationViewController.swift */; };
 		C40EB1551D74286700EE205E /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1541D74286700EE205E /* ShowViewController.swift */; };
 		C40EB1571D74287E00EE205E /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1561D74287E00EE205E /* ProfileViewController.swift */; };
+		C40EB1BE1D7531EE00EE205E /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1B71D7531EE00EE205E /* 1.jpg */; };
+		C40EB1BF1D7531EE00EE205E /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1B81D7531EE00EE205E /* 2.jpg */; };
+		C40EB1C01D7531EE00EE205E /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1B91D7531EE00EE205E /* 3.jpg */; };
+		C40EB1C11D7531EE00EE205E /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1BA1D7531EE00EE205E /* 4.jpg */; };
+		C40EB1C21D7531EE00EE205E /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1BB1D7531EE00EE205E /* 5.jpg */; };
+		C40EB1C31D7531EE00EE205E /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1BC1D7531EE00EE205E /* 6.jpg */; };
+		C40EB1C41D7531EE00EE205E /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C40EB1BD1D7531EE00EE205E /* 7.jpg */; };
+		C40EB1D01D755BF000EE205E /* DCPicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1CB1D755BF000EE205E /* DCPicScrollView.m */; };
+		C40EB1D11D755BF000EE205E /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1CD1D755BF000EE205E /* DCWebImageManager.m */; };
+		C40EB1DF1D7570FB00EE205E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1DE1D7570FB00EE205E /* UIView+Extension.m */; };
 		EDBBF6ECD836233AAC041E85 /* Pods_BanTang_WJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A112E876AC33D9D57B973745 /* Pods_BanTang_WJ.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,6 +84,20 @@
 		C40EB1521D74278900EE205E /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		C40EB1541D74286700EE205E /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		C40EB1561D74287E00EE205E /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C40EB1B51D7520F300EE205E /* BanTang_WJ-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BanTang_WJ-Bridging-Header.h"; sourceTree = "<group>"; };
+		C40EB1B71D7531EE00EE205E /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		C40EB1B81D7531EE00EE205E /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		C40EB1B91D7531EE00EE205E /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		C40EB1BA1D7531EE00EE205E /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		C40EB1BB1D7531EE00EE205E /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		C40EB1BC1D7531EE00EE205E /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		C40EB1BD1D7531EE00EE205E /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		C40EB1CA1D755BF000EE205E /* DCPicScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCPicScrollView.h; sourceTree = "<group>"; };
+		C40EB1CB1D755BF000EE205E /* DCPicScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCPicScrollView.m; sourceTree = "<group>"; };
+		C40EB1CC1D755BF000EE205E /* DCWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DCWebImageManager.h; sourceTree = "<group>"; };
+		C40EB1CD1D755BF000EE205E /* DCWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWebImageManager.m; sourceTree = "<group>"; };
+		C40EB1DD1D7570FB00EE205E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = SOURCE_ROOT; };
+		C40EB1DE1D7570FB00EE205E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = SOURCE_ROOT; };
 		D3BDCC5C78C7AE8D8818DCAB /* Pods-BanTang_WJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanTang_WJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanTang_WJTests/Pods-BanTang_WJTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -182,6 +206,7 @@
 		C40EB0491D6FDEBB00EE205E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB1DC1D7570E900EE205E /* UIViewExtension */,
 			);
 			name = Category;
 			path = ../Category;
@@ -427,6 +452,7 @@
 		C40EB0671D6FDEBB00EE205E /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB1C51D755BF000EE205E /* DCPicscrollView */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -434,12 +460,14 @@
 		C40EB0691D6FEEF300EE205E /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB1B61D7531E600EE205E /* images */,
 				C40EB01A1D6FDBCF00EE205E /* AppDelegate.swift */,
 				C40EB01C1D6FDBCF00EE205E /* ViewController.swift */,
 				C40EB01E1D6FDBCF00EE205E /* Main.storyboard */,
 				C40EB0211D6FDBCF00EE205E /* Assets.xcassets */,
 				C40EB0231D6FDBCF00EE205E /* LaunchScreen.storyboard */,
 				C40EB0261D6FDBCF00EE205E /* Info.plist */,
+				C40EB1B51D7520F300EE205E /* BanTang_WJ-Bridging-Header.h */,
 			);
 			name = SupportFiles;
 			sourceTree = "<group>";
@@ -450,6 +478,40 @@
 				C40EB07F1D70187C00EE205E /* Constants.swift */,
 			);
 			path = Public;
+			sourceTree = "<group>";
+		};
+		C40EB1B61D7531E600EE205E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C40EB1B71D7531EE00EE205E /* 1.jpg */,
+				C40EB1B81D7531EE00EE205E /* 2.jpg */,
+				C40EB1B91D7531EE00EE205E /* 3.jpg */,
+				C40EB1BA1D7531EE00EE205E /* 4.jpg */,
+				C40EB1BB1D7531EE00EE205E /* 5.jpg */,
+				C40EB1BC1D7531EE00EE205E /* 6.jpg */,
+				C40EB1BD1D7531EE00EE205E /* 7.jpg */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		C40EB1C51D755BF000EE205E /* DCPicscrollView */ = {
+			isa = PBXGroup;
+			children = (
+				C40EB1CA1D755BF000EE205E /* DCPicScrollView.h */,
+				C40EB1CB1D755BF000EE205E /* DCPicScrollView.m */,
+				C40EB1CC1D755BF000EE205E /* DCWebImageManager.h */,
+				C40EB1CD1D755BF000EE205E /* DCWebImageManager.m */,
+			);
+			path = DCPicscrollView;
+			sourceTree = "<group>";
+		};
+		C40EB1DC1D7570E900EE205E /* UIViewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C40EB1DD1D7570FB00EE205E /* UIView+Extension.h */,
+				C40EB1DE1D7570FB00EE205E /* UIView+Extension.m */,
+			);
+			name = UIViewExtension;
 			sourceTree = "<group>";
 		};
 		C54719DF65EDD0CD6D22B644 /* Pods */ = {
@@ -577,7 +639,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C40EB1C31D7531EE00EE205E /* 6.jpg in Resources */,
 				C40EB0251D6FDBCF00EE205E /* LaunchScreen.storyboard in Resources */,
+				C40EB1C21D7531EE00EE205E /* 5.jpg in Resources */,
+				C40EB1C11D7531EE00EE205E /* 4.jpg in Resources */,
+				C40EB1BE1D7531EE00EE205E /* 1.jpg in Resources */,
+				C40EB1BF1D7531EE00EE205E /* 2.jpg in Resources */,
+				C40EB1C01D7531EE00EE205E /* 3.jpg in Resources */,
+				C40EB1C41D7531EE00EE205E /* 7.jpg in Resources */,
 				C40EB0221D6FDBCF00EE205E /* Assets.xcassets in Resources */,
 				C40EB0201D6FDBCF00EE205E /* Main.storyboard in Resources */,
 			);
@@ -728,10 +797,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C40EB0841D701B7A00EE205E /* MainNavigationController.swift in Sources */,
+				C40EB1D01D755BF000EE205E /* DCPicScrollView.m in Sources */,
+				C40EB1DF1D7570FB00EE205E /* UIView+Extension.m in Sources */,
 				C40EB0801D70187C00EE205E /* Constants.swift in Sources */,
 				C40EB1571D74287E00EE205E /* ProfileViewController.swift in Sources */,
 				C40EB1531D74278900EE205E /* NotificationViewController.swift in Sources */,
 				C40EB0751D6FF18600EE205E /* MainTabBarController.swift in Sources */,
+				C40EB1D11D755BF000EE205E /* DCWebImageManager.m in Sources */,
 				C40EB0861D702CF000EE205E /* PlazaViewController.swift in Sources */,
 				C40EB1551D74286700EE205E /* ShowViewController.swift in Sources */,
 				C40EB01D1D6FDBCF00EE205E /* ViewController.swift in Sources */,
@@ -879,11 +951,16 @@
 			baseConfigurationReference = A7415DBBCD5BEB74AEEE3620 /* Pods-BanTang_WJ.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BanTang_WJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jerry.BanTang-WJ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/BanTang_WJ/BanTang_WJ-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				USER_HEADER_SEARCH_PATHS = "$SRCROOT/**";
 			};
 			name = Debug;
 		};
@@ -892,11 +969,15 @@
 			baseConfigurationReference = 23A819CF1F828B037891D60A /* Pods-BanTang_WJ.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BanTang_WJ/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jerry.BanTang-WJ";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/BanTang_WJ/BanTang_WJ-Bridging-Header.h";
+				USER_HEADER_SEARCH_PATHS = "$SRCROOT/**";
 			};
 			name = Release;
 		};
