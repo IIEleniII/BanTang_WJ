@@ -14,6 +14,14 @@ class MainNavigationController: UINavigationController {
         super.viewDidLoad()
 
         // 设置导航控制器的全局属性
+        self.navigationBar.setBackgroundImage(UIImage(named: "NavBar64"), forBarMetrics: .Default)
+        // 设置全局barItem 属性
+        let  navBar = UINavigationBar.appearance()
+        let attrs = [NSForegroundColorAttributeName:UIColor.whiteColor()]
+        navBar.titleTextAttributes = attrs
+        navBar.backIndicatorImage = UIImage(named: "back")
+        navBar.tintColor = UIColor.whiteColor() // 全局barItem颜色
+        
     }
 
     override func didReceiveMemoryWarning() {
