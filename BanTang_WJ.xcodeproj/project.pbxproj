@@ -34,6 +34,7 @@
 		C40EB1D01D755BF000EE205E /* DCPicScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1CB1D755BF000EE205E /* DCPicScrollView.m */; };
 		C40EB1D11D755BF000EE205E /* DCWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1CD1D755BF000EE205E /* DCWebImageManager.m */; };
 		C40EB1DF1D7570FB00EE205E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1DE1D7570FB00EE205E /* UIView+Extension.m */; };
+		C40EB1E11D76C48200EE205E /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C40EB1E01D76C48200EE205E /* TitleView.swift */; };
 		EDBBF6ECD836233AAC041E85 /* Pods_BanTang_WJ.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A112E876AC33D9D57B973745 /* Pods_BanTang_WJ.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		C40EB1CD1D755BF000EE205E /* DCWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DCWebImageManager.m; sourceTree = "<group>"; };
 		C40EB1DD1D7570FB00EE205E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = SOURCE_ROOT; };
 		C40EB1DE1D7570FB00EE205E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = SOURCE_ROOT; };
+		C40EB1E01D76C48200EE205E /* TitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TitleView.swift; path = ../../Main/View/TitleView.swift; sourceTree = "<group>"; };
 		D3BDCC5C78C7AE8D8818DCAB /* Pods-BanTang_WJTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanTang_WJTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanTang_WJTests/Pods-BanTang_WJTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -240,6 +242,7 @@
 		C40EB04D1D6FDEBB00EE205E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C40EB1E01D76C48200EE205E /* TitleView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -799,6 +802,7 @@
 				C40EB0841D701B7A00EE205E /* MainNavigationController.swift in Sources */,
 				C40EB1D01D755BF000EE205E /* DCPicScrollView.m in Sources */,
 				C40EB1DF1D7570FB00EE205E /* UIView+Extension.m in Sources */,
+				C40EB1E11D76C48200EE205E /* TitleView.swift in Sources */,
 				C40EB0801D70187C00EE205E /* Constants.swift in Sources */,
 				C40EB1571D74287E00EE205E /* ProfileViewController.swift in Sources */,
 				C40EB1531D74278900EE205E /* NotificationViewController.swift in Sources */,

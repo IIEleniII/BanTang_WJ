@@ -14,16 +14,18 @@ let fileHTTP:String = "http://182.140.132.172/HealthRecordCenter/HealthRecordFil
 
     //屏幕的宽高
 
-let screenW = UIScreen.mainScreen().bounds.size.width
-let screenH = UIScreen.mainScreen().bounds.size.height
-let navBarH:CGFloat = 64
-let tabbarH:CGFloat = 44
+let SCREEN_WIDTH = UIScreen.mainScreen().bounds.size.width
+let SCREEN_HEIGHT = UIScreen.mainScreen().bounds.size.height
+let NAVBAR_HEIGHT:CGFloat = 64
+let TABBAR_HEIGHT:CGFloat = 44
 
     //颜色相关
 
 let themeColor = UIColor.init(red: 37/255.0, green: 190/255.0, blue: 159/255.0, alpha: 1.0)
 let selectedThemeColor = UIColor(red: 182/255.0, green: 209/255.0, blue: 200/255.0, alpha: 0.6)
 let randomColor = UIColor(red: CGFloat(arc4random_uniform(255))/255.0, green: CGFloat(arc4random_uniform(255))/255.0, blue: CGFloat(arc4random_uniform(255))/255.0, alpha: 1.0)
+let MainTitleColor:UIColor = UIColor.init(red: 109/255.0, green: 109/255.0, blue: 109/255.0, alpha: 1.0)
+let SubTitleColor:UIColor = UIColor.init(red: 153/255.0, green: 153/255.0, blue: 153/255.0, alpha: 1.0)
 
 
 // MARK: - 常用配置方法
