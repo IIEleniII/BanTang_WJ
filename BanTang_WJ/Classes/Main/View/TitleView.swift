@@ -100,7 +100,7 @@ class TitleView: UIScrollView {
         let btn = self.viewWithTag(btnIndex+100) as? UIButton
         btn?.selected = true
         
-        UIView.animateWithDuration(0.3, animations: { () -> Void in
+        UIView.animateWithDuration(0.3, animations: { () in
             self.indicator.center = CGPointMake(btn!.center.x, self.indicator.center.y)
             }) { (finished:Bool) -> Void in
                 self.currentPage = btnIndex

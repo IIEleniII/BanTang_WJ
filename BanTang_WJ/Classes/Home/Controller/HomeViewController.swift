@@ -8,13 +8,14 @@
 
 import UIKit
 
-class HomeViewController: UIViewController,UIScrollViewDelegate,TitleViewDelegate,UICollectionViewDataSource,UICollectionViewDelegate{
+class HomeViewController: UIViewController,UIScrollViewDelegate,TitleViewDelegate{
 
     var headerView:UIView! // 头部视图
     var bannerView:DCPicScrollView! // 轮播图片
     var titleScrollView:TitleView! //滑动标题
-    var contentView:UICollectionView! //内容视图
+    var contentView:UIScrollView! //内容视图
     var titleArr:[String]! //存放标题文字字符串
+    var currentIndex:CGFloat! // 标题文字的当前选项索引
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +24,9 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,TitleViewDelegat
         
         // 2.初始化头部视图(包含轮播图、标题按钮、滚动标题view)
         setupHeaderView()
-        // 3.创建内容collocationView
+        // 3.创建内容tableView
+        setupSubTableViewVcs()
+        // 4.创建容器scrollView
         setupContentView()
         
     }
@@ -50,35 +53,69 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,TitleViewDelegat
     }
     // 创建内容视图
     func setupContentView(){
-    
-        let layout = UICollectionViewFlowLayout.init()
-        layout.scrollDirection = .Horizontal
-        layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
-        layout.minimumInteritemSpacing = 0.0
-        layout.minimumLineSpacing = 0.0
         
-        contentView = UICollectionView(frame: CGRectMake(0, CGRectGetMaxY(titleScrollView.frame), SCREEN_WIDTH, SCREEN_HEIGHT), collectionViewLayout: layout)
-        contentView.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: "cellIDentifier")
-        contentView.contentSize = CGSizeMake(13*SCREEN_WIDTH, 0)
+        let vcCount :CGFloat = CGFloat(self.childViewControllers.count)
+        contentView = UIScrollView(frame: CGRectMake(0, CGRectGetMaxY(titleScrollView.frame), SCREEN_WIDTH, SCREEN_HEIGHT))
+        
+        contentView.contentSize = CGSizeMake(vcCount*SCREEN_WIDTH, 0)
         contentView.bounces = false
         contentView.pagingEnabled = true
-        contentView.backgroundColor = UIColor.whiteColor()
+        contentView.backgroundColor = UIColor.redColor()
         contentView.delegate = self
-        contentView.dataSource = self
         self.view.addSubview(contentView!)
 
         
     }
+    // 添加tableView子控制器
+    func setupSubTableViewVcs(){
+//        // 最新
+//        let latestVc = UITableViewController(style: .Plain)
+//        latestVc.view.backgroundColor = UIColor.redColor()
+//        self.addChildViewController(latestVc)
+//
+//        // 文艺
+//        let performVc = UITableViewController(style: .Plain)
+//        performVc.view.backgroundColor = randomColor
+//        self.addChildViewController(performVc)
+//        //礼物
+//        let giftVc = UITableViewController(style: .Plain)
+//        performVc.view.backgroundColor = UIColor.blueColor()
+//        self.addChildViewController(giftVc)
+        
+        for _ in 0..<titleArr.count {
+            
+            let vc = UITableViewController(style: .Plain)
+            vc.view.backgroundColor = randomColor
+            self.addChildViewController(vc)
+        }
+        
+        
+    }
+    
+    override func viewWillLayoutSubviews() {
+        // 布局子控制器
+        var i:CGFloat = 0
+        for vc in self.childViewControllers {
+            if vc.isKindOfClass(UITableViewController) {
+                vc.view.frame = CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGHT-CGRectGetMaxY(titleScrollView.frame))
+                self.contentView.addSubview(vc.view)
+            }
+            i++
+        }
+    }
+
     func setupTitleScrollView(){
     
         titleArr = ["最新","文艺","礼物","指南","爱美","设计","吃货","厨房","上班","学生","聚会","节日","宿舍"]
         titleScrollView = TitleView(titleArr: titleArr, normalColor: SubTitleColor, highlightColor: UIColor.redColor(), fontSize: 16.0)
         titleScrollView.frame = CGRectMake(0, CGRectGetMaxY(bannerView.frame)+100, SCREEN_WIDTH, 36)
+        titleScrollView.clickDelegate = self
         headerView.addSubview(titleScrollView)
     }
     //MARK: - titleView delegate
     func TitleViewClick(titleVIew: TitleView, clickBtnIndex: Int) {
         // 点击标题按钮，联动底部collocationView
+        printLog(clickBtnIndex)
         weak var weakSelf = self
         UIView.animateWithDuration(0.3) { 
             weakSelf?.contentView.contentOffset = CGPointMake(CGFloat(clickBtnIndex)*SCREEN_WIDTH, 0)
@@ -148,16 +185,12 @@ class HomeViewController: UIViewController,UIScrollViewDelegate,TitleViewDelegat
         headerView.addSubview(bannerView)
     }
     
-    // MARK:- collectionView delegate
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
-        return titleArr.count
-    }
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+    // MARK:- scrollView delegate
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        if scrollView.isEqual(contentView) {
+            currentIndex = (contentView.contentOffset.x + SCREEN_WIDTH/2)/SCREEN_WIDTH
+            titleScrollView.setBottomView(Int(currentIndex))//移动标题view
+        }
     }
     
 }
